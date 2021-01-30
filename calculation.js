@@ -28,13 +28,12 @@ var firstClassMinus = document.getElementById("firstclassminus").addEventListene
     }
 
     else {
-        firstClassTickets -= 1; 
+        firstClassTickets -= 1;
+
+        document.getElementById("firstclassinput").value = firstClassTickets;
+
+        calculationMinus("firstclassticketprice", "subtotal", "vat", "total");
     }
-
-    document.getElementById("firstclassinput").value = firstClassTickets;
-
-    calculationMinus("firstclassticketprice", "subtotal", "vat", "total");
-
 })
 
 
@@ -48,12 +47,12 @@ var economyClassMinus = document.getElementById("economyclassminus").addEventLis
     }
 
     else {
-        economyClassTickets -= 1; 
+        economyClassTickets -= 1;
+        
+        document.getElementById("economyclassinput").value = economyClassTickets;
+
+        calculationMinus("economyclassticketprice", "subtotal", "vat", "total");
     }
-
-    document.getElementById("economyclassinput").value = economyClassTickets;
-
-    calculationMinus("economyclassticketprice", "subtotal", "vat", "total");
 
 })
 
